@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="ubikeAPI.css">
+	<title>Document</title>              
+</head>
+<body>
+  <!-- // sno(站點代號)、sna(場站中文名稱)、tot(場站總停車格)、sbi(場站目前車輛數量)、sarea(場站區域)、mday(資料更新時間)、lat(緯度)、lng(經度)、ar(地點)、sareaen(場站區域英文)、snaen(場站名稱英文)、aren(地址英文)、bemp(空位數量)、act(全站禁用狀態)、srcUpdateTime、updateTime、infoTime、infoDate -->
+
+  <section class="searchBox">
+    請輸入Ubike站位置
+    <input type="text" id="searchBike">
+    <input type="submit" name="查詢" value="查詢" id="searchBtn">
+  </section>
+
+ <section class="ubikeBox">
+  <span class="container">
+    <div class="boxhead">
+      <header>場站名稱</header>
+      <div class="info" id="cName"></div>
+    </div>
+    <div class="boxinfo">
+      <div>目前車輛數量</div>
+      <div class="info" id="amount"></div>
+      <div>空位數量</div>
+      <div class="info" id="spaceAvailable"></div>
+      <div>地址</div>
+      <div class="info" id="location"></div>
+      <div>更新時間</div>
+      <div class="info" id="uptadeTime"></div>
+    </div>
+  </span>
+ </section>
+
+
+
+
+  <script src="ubikeAPI.js"></script>
+</body>
+</html>

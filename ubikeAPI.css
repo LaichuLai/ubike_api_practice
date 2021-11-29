@@ -1,0 +1,10 @@
+.ubikeBox {
+  background-color: gold;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+}
